@@ -1,0 +1,5 @@
+name: hello
+publish_to: none
+dependencies:
+  serverless:
+    path: ../../serverless
