@@ -51,10 +51,17 @@ main(_, [SendPort sendPort]) async {
 1. `cd backend`
 2. `dart --observe bin/dev.dart`. (`--observe` is optional; it enables hot reloading)
 
+You can then visit routes from the `hello` app:
+* http://localhost:3000/apps/hello/greet/tobe
+* http://localhost:3000/apps/nonexistent_route
+
 ## Adding an App
 1. Create a project, anywhere on the disk. Ideally, though, you'll
 put this in the `apps/` dir, for the purposes of this demo.
 2. Add an entry to `backend/src/db/apps.json`, containing a `name` and the `path` to the directory, relative to `backend/`.
+
+In development mode, the `Application` class will just mount a small HTTP server.
+For example, run `cd apps/hello && dart bin/main.dart`.
 
 ## Considerations
 * This PoC implementation should be kept far away from production, as
