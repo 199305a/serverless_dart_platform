@@ -57,7 +57,7 @@ main(_, [SendPort sendPort]) async {
 
 You can then visit routes from the `hello` app:
 * http://localhost:3000/apps/hello/greet/tobe
-* http://localhost:3000/apps/nonexistent_route
+* http://localhost:3000/apps/hello/nonexistent_route
 
 ## Adding an App
 1. Create a project, anywhere on the disk. Ideally, though, you'll
