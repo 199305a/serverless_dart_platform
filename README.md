@@ -1,6 +1,10 @@
 # serverless_dart_platform
 A **minimal** PoC for a Dart-based FaaS provider.
 
+If interest is high enough (kinda doubt it),
+I might consider actually developing a derivative of this into a
+Lambda-like serverless platform for Dart functions.
+
 The concept is simple:
 * Store user/guest apps in separate directories
 * Launch one isolate for each application, when said application is called
